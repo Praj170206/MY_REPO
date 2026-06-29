@@ -1,5 +1,6 @@
 app.log
 secretes.json
 
-*.log ## all files with .log extension will be ignored by git.
+*.log
+## all files with .log extension will be ignored by git.
 ## this file is used to ignore the log files and secretes.json file which contains sensitive information like username and password.
