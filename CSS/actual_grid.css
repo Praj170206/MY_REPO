@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+/* grid is also block element */
+.container{
+    display:grid;
+    /*  2-rows and 2-columns  of 200px each*/
+    grid-template-rows : 1fr 1fr ;
+    grid-template-columns : 1fr 1fr;
+    background-color: pink;
+    height:400px;
+    width:400px; /*Basically we can give height and width as well */
+    gap:10px;
+}
+
+.first {
+    background-color: cadetblue;
+}
+.second{
+    background-color: aliceblue;
+}
+.third{
+    background-color: bisque;
+}
+.fourth{
+    background-color: aqua;
+}

@@ -1,0 +1,11 @@
+Inline elements -> anchor tag, span Tags
+Jitne pe lagaya utne pe hi lagega 
+Height and width apply nhi hote
+Padding aur margin ko sirf horizontally apply hone dunga , vertical me nhi , matlab sirf left aur right se honge naaki top bottom se
+But actual me woh kuch bhi padding aur margin se extra space nhi le rhe , just visually show hoga agar bgcolor lagaya toh
+
+
+Block elements -> div , h1 h2 h3 , p Tags
+Poore area ko acquire karega
+Height and width apply hote hai
+Margin and padding apply hote hai

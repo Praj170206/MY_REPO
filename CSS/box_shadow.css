@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+    display: flex;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .container{
+    height : 200px;
+    width : 200px;
+    background-color: orange;
+    border-radius: 10px;
+    box-shadow: 10px 10px 25px  rgb(220, 96, 19); /* offset of x and offset of y and blurry radius and color if negative values are given then it will go in left dxn*/
+    /* x-offset , y-offset, blurr-radius,  spraed-radius, color */
+    /* spread-radius is actually increasing the radius from all directions , it compensates with the x and y offset */
+    /* box-shadow: inset 10px 10px rgb(69, 2, 2);
+    /* inset se shadow andar ki taraf aana chalu ho jayegi */
+/* }  */ 
+
+.sun{
+    height:100px;
+    width:100px;
+    border-radius : 50%;
+    background-color: yellow;
+    box-shadow: 0px 0px 30px 10px red;
+}

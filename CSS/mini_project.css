@@ -1,0 +1,89 @@
+#japan-flag{
+    height : 200px;
+    width:300px;
+    background-color: rgb(164, 139, 139);
+    position:relative; /* here relative because circle ka absolute work karna chahiye isliye*/
+}
+#circle{
+    height : 100px;
+    width : 100px;
+    background-color: red;
+    border-radius: 50%;
+    position:absolute;  
+    /* here position is absolute because usko uske ancestor ke respect me move karana hai */
+    left : 100px;
+    top : 50px;
+}
+
+
+
+#sweden-flag{
+    height : 200px;
+    width: 300px;
+    background-color: rgb(233, 211, 42);
+    position:relative;
+}
+.box{
+    background-color: blue;
+}
+#box1{
+    height: 80px;
+    width:90px;
+}
+#box2{
+    height: 80px;
+    width:90px;
+    position:absolute;
+    bottom:0px;
+}
+/*  height of yellow patch = 200 - (80+80) = 40 */
+/* width of yellow patch = 300 - 170 - 90 = 40 */
+/* because of this calculation we are supposed only box3 and 4 ki width is 170  */
+#box3{
+    height:80px;
+    width:170px;
+    position:absolute;
+    left:130px;
+    top:0px;
+}
+#box4{
+    height:80px;
+    width: 170px;
+    position:absolute;
+    left: 130px;
+    bottom:0px;
+}
+
+
+#laos-flag{
+    height:200px;
+    width:300px;
+    background-color: rgb(0, 40, 104);
+    position:relative;
+}
+#circle1{
+    height : 80px;
+    width : 80px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position:absolute;  
+    /* here position is absolute because usko uske ancestor ke respect me move karana hai */
+    left : 110px;
+    top : 60px;
+}
+.rectangle{
+    width:300px;
+    background-color: rgb(206,17,38) ;
+    position:absolute;
+}
+#r1{
+    height:50px;
+     top:0px;
+}
+#r2{
+    height:50px;
+     bottom:0px;
+}
+
+
+/*  */

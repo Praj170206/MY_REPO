@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Website</title>
+</head>
+<body>
+
+    <h1>This is our Media Website</h1>
+
+    <h2>Audio</h2>
+    <audio controls>
+        <source src="birds.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <br><br>
+
+    <h2>YouTube Video</h2>
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/NGYp1zCBthk?list=PLQEaRBV9gAFvuqteq8ue-jANYIBD2H9BF&index=5"
+        title="YouTube video player"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+
+</body>
+</html>
+
+
+<!-- ❌ Mistake 2: Incorrect YouTube Embed URL
+You wrote:
+https://www.youtube.com/embed/NGYp1zCBthk&list=PLQEaRBV9gAFvuqteq8ue-jANYIBD2H9BF&index=5
+The first query parameter should start with ?, not &.
+Correct:
+<iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/NGYp1zCBthk?list=PLQEaRBV9gAFvuqteq8ue-jANYIBD2H9BF&index=5"
+    title="YouTube video player"
+    frameborder="0"
+    allowfullscreen>
+</iframe> -->

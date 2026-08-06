@@ -1,0 +1,40 @@
+.container{
+    height: 400px;
+    width : 400px;
+    font-size:50px;
+    background-color: aqua;
+}
+
+@media screen and (max-width : 900px){
+    .container{
+        background-color: rgb(101, 239, 101);
+        font-size:40px;
+        /* max-width: here means jab max-width itna ho jayega tab ye property apply kardena 
+         aur max-width means hum bade device se chhote device pe jaa rhe hai*/
+    }
+}
+/* agar ye wala niche likhe toh woh max-width ke basis pe overwrite karega 600px ko */
+
+@media screen and (max-width:600px) {
+    .container{
+        background-color: pink;
+        font-size:30px;
+    }
+}
+
+ /* @media screen and (min-width: 600px){
+     .container{
+        background-color: rgb(229, 177, 8);
+     }
+}   /* min-width means hum chhote device se bade device pe jaa rhe hai -> mobile first approach , default wala mobile view pe lagega more preffered one*/
+
+ /* @media screen and (min-width: 900px){
+     .container{
+        background-color: cadetblue;
+     }
+} */
+
+/* websites are created in two ways 1) Mobile-first , 2) Desktop-first*/
+
+
+

@@ -1,0 +1,1 @@
+absolute path is being blocked by the browser , because if we give that access means it has an access of our memory location as well

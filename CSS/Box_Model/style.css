@@ -1,0 +1,25 @@
+h1{
+    background-color: orange;
+    /* height: 300px; */
+    width:300px;
+    /* border-width: 5px;
+    border-style :solid;
+    border-color: rgb(40, 24, 3); */
+    border: 5px solid rgb(40,24,3);
+
+    padding:10px;
+    margin:10px;
+    border-radius: 25px;
+    /* border-right: 10px solid black;
+    border-left: 10px solid red;
+    border-top: 10px solid yellow;
+    border-bottom : 10px solid fuchsia;  */
+    /*  The top , right , bottom , left will be for padding and margin as well */
+    /* padding : 10px 20px 30px 40px; */
+    /* padding : 20px 40px     top-bottom   left-right*/ 
+}
+
+h2{
+  background-color: pink;   
+  border: 2px solid blue;
+}

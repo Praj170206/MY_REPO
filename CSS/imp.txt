@@ -1,0 +1,94 @@
+Inline css ki priority will be highest 
+
+And External ya internal css wala depend karta hai , ki woh head section me last me kya lie karta hai , jo last me hoga uski priority hogi
+
+The specific we go the specific things it will apply to that thing 
+Like (id > class > tag) selector
+multiple elements can have same class , but id is always unique
+
+/* If we do display:inline -> it means the element will be displayed inline, not as a block */
+/* display:inline; */
+/* content-box does not include padding and border in the element's total width and height -> woh alag se add karte hain */
+/* content-box = content-width */
+/* If we do display:inline-block -> it means the element will be displayed inline but with block-level properties
+In this all properties like apdding , margin , height , width are applied */
+/* display : inline-block; */
+/* border-box includes padding and border in the element's total width and height */
+/* Border-box = border-width + padding-width + contet-width */
+/* If we do display:block -> it means the element will be displayed as a block */
+
+
+CSS : Cascading Style Sheet
+priority
+0 : Important
+1 : Inline CSS (priority high)
+2 : Id(priority)
+3 : class(priority)
+4 : tag(h1,h2)
+5: Ordering Important(If Tie Happens)
+
+Position:
+1 : static -> By Default, all elements are positioned static. Static elements are not affected by the top, bottom, left, and right properties. They are always positioned according to the normal flow of the page.
+2 : relative -> khudke initial relative position se move hoga ye like from left , right , top , bottom khudke relative move hoga , aur ye apne original jagah pe kisiko aane nhi dega , uski original space reserved rahegi 
+3 : fixed -> it will be having fix position wrt page (eg: the navigation bar of the website)
+4 : sticky -> if position : sticky ; top : 0 px means jab ye top pe jaayega then isko sticky kar dena
+5 : absolute -> webpage ke respect se work karta hai agar uska ancestor's position static hogi,par agar ancestor ki position fixed , sticky aur relative kuch bhi hai toh uske absolute mai apne aap ko place karega, isme aur relative position me itna hi difference hai ki relative me khudke initial position ke respect me move hoga , aur absolute me webpage ke respect me move hoga , aur ye apne original jagah pe kisiko bhi aane dega
+
+z-index value -> is used to override on other jiski z-index jyada hogi wahi upar dikhega
+
+FlexBox : it is helpful when we are supposed to make layout , and also helpful to arange them in horiontal way
+But this Flexbox is only applicable to Parent element , not child element ->it must contain parent-child relationship
+Flex-direction is by default row but if we want it to make column then we can make that too
+Flex-direction -> row-reverse , column-reverse , row , column 
+Justify-content : center , start , end , space-evenly space-around , space-between  -> will always work wrt Main axis
+Main axis and Cross axis -> the direction of the flex will decide its main axis and cross axis whether it is horizontal or vertical
+Align-items -> center , end   works around cross axis
+To have element at the center of the page then we have to do 
+{
+    display:flex;
+    flex-direction : row;
+    justify-content:center;
+    align-items:center;
+    flex-wrap : wrap;
+    gap : 10px;  // margin nahi gap hoga
+    flex-grow : 1 ; // means khali jitna h uska ek part isko dedo 
+}
+flex-wrap : wrap , wrap-reverse , no-wrap -> it will wrap the elements on diff diff dimensions 
+agar flex-grow : 2 // means khali jitna hai uska 2 part isko dedo
+agar flex-shrink : 1 // means khali jitna hai uska 1 part isko kam kar do
+agar flex-basis : 200px // toh iski length 200px ho jaayegi main  axis ke around either it will increase height or width based on its main axis, irrespective of given width it will overwrite it
+
+align-self : flex-start , flex-end; // irrespective of all other elements bas apne aapko waha pe leke jaayega
+
+IMP
+Mainaxis Crossaxis
+Container : flex , flexdirection , justify , align , flexwrap
+child(flexitem) : grow , shrink , basis , align self
+
+
+FlexBox -> is applicable only on one-dimensional not on 2D that's why Grid came in picture
+it is possible via flexbox also but uske liye ek div without bgcolor me alag se divs banana padega
+
+Grid :-> Matrix -> Rows and columns
+Parent: Grid(Container) -> rows and columns
+grid-template-rows : 200px 200px;
+grid-template-columns : 200px 200px;
+items : Grid-items
+
+
+but when we give background color to container the extra blocks will get overflow so to get the rid of overflow we can use fraction -> fr
+grid-template-rows : 1fr 1fr ;
+grid-template-columns : 1fr 1fr;
+
+to make the grid responsive we can use minmax() function
+grid-template-rows : minmax(100px, 1fr) minmax(100px, 1fr);
+rows(4) : 1fr 2fr 2fr 1fr ; // means 1+2+2+1 = 6 parts , so first row will get 1/6th of the total height , second row will get 2/6th of the total height and so on
+columns(3) : 1fr 1fr 1fr ; // means 1+2+2+1 = 6 parts , so first column will get 1/6th of the total width , second column will get 2/6th of the total width and so on
+
+
+overflow ->
+1) overflow: hidden -> baaki sab hide kardega bas jitna chahiye utna hi dikhayga
+2} overflow: scroll -> it will scroll the content in the box
+3) overflow: auto -> it will scroll the content in the box only when it is required
+
+

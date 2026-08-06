@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <header>
+        <h1>University Registration form</h1>
+        <p>Please Fill out the Form</p>
+    </header>
+    <hr> 
+
+    <main>
+        <form>
+<div id="Personal Details">
+        <h2>Personal Details</h2>
+        <label for="fname">First Name: </label>
+        <input type="text" name="fname"  id="fname" placeholder="eg.Arjun" autofocus field required>
+        <br/><br/>
+
+        <label for="lname">Last Name: </label>
+        <input type="text" name = "lname" id="lname" placeholder="eg.Kumar" autofocus field required> 
+         <br/><br/>
+
+         <label for="dob">Date of Birth:</label>
+          <input type="date" name="dob" id="dob" placeholder="dd/mm/yyyy" field required>
+          <br/><br/>
+
+          <label for="gen">Gender:</label><br/>
+            <input type = "radio" name="gen" id = "gen" value = male>Male<br/>
+            <input type = "radio" name="gen" id = "gen" value = Female>Female<br/>
+            <input type = "radio" name="gen" id = "gen" value = others>Others<br/>
+            <br/>
+
+            <label for="photo">Upload Your Photo:</label><br/>
+            <input type="file" name="photo" id="photo">
+</div>
+<hr/>
+<div id = "Contact_Info">
+    <h2>Contact Information</h2>
+
+    <label for="mail">Email Address:</label>
+    <input type="email" name="mail" id="mail" placeholder="you@gmail.com">
+    <br/><br/>
+
+    <label for="phn">Phone Number: </label>
+    <input type="tel" name="phn" id="phn" placeholder="eg.98818188180">
+    <br/><br/>
+
+    <label>Mailing Address: </label><br/>
+    <textarea type="text" name="mailing" id="mailing" placeholder="Street Address , City, State , ZIP Code" ></textarea>
+</div>
+<br/><br/>
+<hr/>
+<div id="Academic Information">
+    <h2>Academic Information</h2>
+
+
+    <label for="course">Select Your Course:</label><br/>
+    <select name="course" id="course">
+        <option value="CSE">CSE</option>
+        <!-- humko value bhejni hai naa ki bas on -->
+        <option value = "ENTC">ENTC</option>
+        <option value = "Mech"> Mechanical</option>
+        <option value = "Chemical">Chemical </option>
+    </select>
+
+    <br/>
+    <h3>Extra Curricural Activities</h3>
+    <label for="Sports">Sports</label>
+    <input type="checkbox" name="interests" id="Sports" value="Sports">
+    <br/>
+    <label for="Music">Music</label>
+    <input type="checkbox" name="interests" id="Music" value="Music">
+    <br/>
+    <label for="Dance">Dance</label>
+    <input type="checkbox" name="interests" id="Dance" value="Dance">
+    <br/>
+    <label for="Art">Art</label>
+    <input type="checkbox" name="interests" id="Art" value="Art">
+    <br/>
+</div>
+<hr>
+<div id="Create Your Account">
+    <h2>Create Your Account</h2>
+     <label for="password">Create a Password:</label>
+     <input type="password" name="pass" id="pass"><br/><br/>
+
+     <label>Security Question:</label>
+     <select name="security" id="question">
+        <option value="pet_name">What's your pet name?</option>
+        <!-- humko value bhejni hai naa ki bas on -->
+        <option value = "dob">What is yout Date of Birth</option>
+        <option value = "month">What is your month of birth?</option>
+        <option value = "age">What was your age 3 years ago? </option>
+    </select>
+    <br/><br/>
+
+    <label>Security Answer:</label>
+    <input type="text" name="security_answer" id="answer">
+    <br><br>
+     
+    <input type="checkbox" >
+    <label>I agree to the Terms and Conditions.</label>
+</div>
+<hr>
+<br>
+<div id="submit">
+    <button type="submit">Register</button> 
+    <button type="reset">Clear Form</button>
+</div>
+
+        </form>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+*{
+    padding: 0px;
+    margin : 0px;
+}
+h1{
+    background-color: aqua;
+    height : 200px;
+    width : 300px;
+ /* If we do display:inline -> it means the element will be displayed inline, not as a block */
+    /* display:inline; */
+
+    box-sizing : content-box;
+    /* content-box does not include padding and border in the element's total width and height -> woh alag se add karte hain */
+    /* content-box = content-width */
+}
+
+h2{
+    background-color: lightgreen;
+    height : 200px;
+    width : 300px;
+    /* If we do display:inline-block -> it means the element will be displayed inline but with block-level properties
+    In this all properties like apdding , margin , height , width are applied */
+    /* display : inline-block; */
+    box-sizing : border-box;  /*Border se include karta hain */
+    /* border-box includes padding and border in the element's total width and height */
+    /* Border-box = border-width + padding-width + contet-width */
+}
+span{
+    background-color: pink;
+    padding-left : 20px;
+    padding-right : 20px;
+    margin-left : 20px;
+    margin-right : 20px;
+    /* If we do display:block -> it means the element will be displayed as a block */
+    display : block;
+}

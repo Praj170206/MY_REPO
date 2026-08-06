@@ -1,0 +1,60 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    height:100vh;
+    display:flex;
+    background-color: black;
+    justify-content: center;
+    align-items:center;
+    gap:20px;
+    perspective: 1000px; /*It is used to give depth to the object*/   
+}
+
+.box{
+   height:150px;
+   width:150px;
+   background-color: orange;
+   cursor:pointer;
+   border-radius:10px;
+   transition-property: all;
+   transition-duration:2s;
+   transition-timing-function: ease-in; /*it can be ease-out , ease-in , linear ,*/ 
+   
+    /* transition: all 3s ease-in 2s;  -> shorthand*/
+     animation-name: moving;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+}
+/* The main difference between transition and animation is that animation does all things automatically but transition happens only when triggered*/
+.box:hover{
+    background-color: purple;
+    /* width:300px;
+    height:300px; */
+    transform:scale(2); /*Itne guna usko kardo*/
+     transform:translate(100px , 200px);/*In both direction */
+    /* transform:translateX(200px) -> x direction me 200px door chala jaa
+       transform:translateY(200px) -> y diretion me 200px
+       transform:rotate(30deg) -> will rotate in 30 degree
+       transform: skewX(30deg) -> x and y dxn me respectively move hoge*/
+      /* transform : translateZ(200px); /*Z direction me move hoga*/
+      transform: rotateY(180deg); /*Y axis ke around 180 degree ghum jaayega*/
+      transform: rotateX(180deg); /*X axis ke around 180 degree ghum jaayega*/
+     
+}
+/*  transform:scale(2);-> scaleX means increase in x direction only and scaleY in y dxn only */
+/*  The main reason of using transform is nothing but when we appply transition on one box it will affect another one */
+
+
+@keyframes moving {
+    from{
+        margin-left:100%;
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}

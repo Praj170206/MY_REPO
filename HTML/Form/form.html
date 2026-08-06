@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <h1>Form</h1>
+    </header>
+    <!-- Here name attributes are very important because when it gets stored in the database, they are used to identify the data -->
+    <main>
+        <form>
+            <label>Name: </label>
+            <input type="text" name = "name" field required autofocus placeholder = "Enter your name" > 
+            <br/><br/>
+            <label>Age: </label>
+            <input type = "number" name = "age" field required min = "1" max = "100" placeholder = "Enter your age">
+            <br><br>
+            <label>Password: </label>
+            <input type="password" name = "password" field required minlength = "8" maxlength = "20" placeholder = "Enter your password">
+            <br><br>
+
+            <label>Gender: </label>
+            <input type = "radio" name = "gender" value = "male" required for="male"> Male
+            <input type = "radio" name = "gender" value = "female   " required for="female"> Female
+             <!-- In this value attribute, we are assigning the value to the radio button , because when the form is submitted, this value will be sent to the server , bydeafult it is sent as on which is not what we want -->
+
+            <br><br>
+             <label for="cpp"> C++</label>
+             <input type="checkbox" id="cpp" name="languages" value="cpp">
+            <label for="java"> Java</label>
+            <input type = "checkbox" id = "java" name = "languages" value = "java">
+            <label for="python"> Python</label>
+            <input type = "checkbox" id = "python" name = "languages" value = "python">
+
+            <br><br>
+            <input type = "submit">
+        </form>
+    </main>
+
+    <footer>
+       <h3><center>Contact Details</center></h3>
+    </footer>
+</body>
+</html>
